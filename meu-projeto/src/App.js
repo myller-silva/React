@@ -4,7 +4,7 @@ import './App.css';
 // import Pessoa from './components/Pessoa';
 // import Frase from './components/Frase';
 // import List from './components/List';
-import Evento from './components/Evento';
+import Evento from './components/evento/Evento';
 import Form from './components/Form';
 
 function App() {

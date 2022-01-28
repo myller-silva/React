@@ -3,8 +3,16 @@ import { useState } from 'react';
 function Form( ) {
     function cadastrarUsuario( event ) {
         // nao enviar o formulario pro servidor:
-        event.preventDefault();    
-        console.log(`Usuario: ${name}\nPassword: ${password}`);
+        event.preventDefault();
+        
+        console.log(`Usuario: ${name}\nPassword: ${password}`);  
+
+        // setar campos de input:
+        document.querySelector("#name").value="";
+        document.querySelector("#password").value="";
+        setName();
+        setPassword();
+        
     }
 
     // name: nome do atributo que será lido/resgatado
@@ -21,7 +29,8 @@ function Form( ) {
                     <input 
                         type="text" 
                         placeholder="digite seu nome" 
-                        id="name" name="name" 
+                        id="name" 
+                        name="name" 
                         onChange={ (event) => setName(event.target.value)}
                     />                    
                 </div>
