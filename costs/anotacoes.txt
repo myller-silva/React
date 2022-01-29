@@ -1,0 +1,13 @@
+npm install json-server react-icons react-router-dom uuid
+
+json-server:
+    responsavel pelo "backend fake", para consegui fazer requisicoes na api: resgatar dados, enviar dados, atualizar dados
+    
+react-icons: 
+    responsavel pelos icones
+
+react-router-dom:
+    manipular rotas
+
+uuid:
+    responsavel pelo id do projeto
