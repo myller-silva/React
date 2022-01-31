@@ -1,14 +1,29 @@
+import { useEffect, useState } from 'react';
+
 import Input from '../form/Input';
 import Select from '../form/Select';
 import SubmitButton from '../form/SubmitButton';
 import styles from './ProjectForm.module.css';
 
 function ProjectForm(  {btnText} ) {
+    const [categories, setCategories] = useState([]);
+    // request para a api:
+    useEffect( () => {
+        fetch("http://localhost:5000/categories", {
+            method: "GET",
+            headers:{
+                'Content-type': 'aplication/json',
+            },
+        })
+        .then( (resp) => resp.json())
+        .then( (data) => {
+            setCategories(data)
+        })
+        .catch( (err) => console.log(err) )
+    }, []);
+
     return(
         <form className={styles.form}>
-            {/* <div>
-                <input type="text" placeholder="Insira o nome do projeto"/>
-            </div> */}
             <Input 
                 type="text" 
                 text="Nome do projeto"
@@ -25,7 +40,7 @@ function ProjectForm(  {btnText} ) {
             <Select
                 text="Selecione uma categoria"
                 name="category_id"
-                options
+                options = {categories}
                 handOnChange
                 value
             />
