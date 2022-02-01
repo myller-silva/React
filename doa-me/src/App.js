@@ -15,7 +15,6 @@ function App() {
           <Route path='/pedidos' element={<Pedidos/>}/>
         </Routes>
       </div>
-
       {/*  */}
       {/* <Footer/> */}
     </Router>

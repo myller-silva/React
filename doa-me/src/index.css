@@ -6,7 +6,8 @@ body{
 .container{
   background-color: #E3E3E3;
   /* modificar depois: */
-  width: 1200px;
+  /* width: 1200px; */
+  /* height: 640px; */
   margin: auto;
   display: flex;
 }

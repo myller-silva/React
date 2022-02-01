@@ -1,0 +1,80 @@
+.card{
+    background: #FFFFFF;
+    padding: 15px;
+    width: 25em;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+h3{
+    padding: 0;
+    margin: 0;
+}
+.usuario{
+    display: flex;
+    height: 50px;
+}
+
+.profile svg{
+    color: gray;
+    font-size: 50px;
+}
+.profile img{
+    color: gray;
+    font-size: 50px;
+}
+
+.nome-endereco{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detalhes{
+    margin-bottom: 1em;
+}
+
+.detalhes ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.detalhes ul li{
+    margin: 0;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.detalhes ul li svg{
+    font-size: larger;    
+    color: red;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: end;
+}
+
+.btn button{
+    background: #00DF6D;
+    color: #fff;
+    border-style: none;
+    height: 2em;
+    width: 30%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn button:hover{
+    background: #009247;
+    color: #fff;
+    text-shadow: #000;
+}
