@@ -1,10 +1,13 @@
+import Card from "../Card";
 
 
 function Pedidos(   ) {
     return(
         <div>
-            <h2>Pedidos</h2>
-            <p>Todos os pedidos</p>
+            <h1>Seus pedidos</h1>
+            <Card 
+                tipo="atualizar"
+            />
         </div>
     )
 }

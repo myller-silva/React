@@ -4,7 +4,20 @@ import {MdOutlineBloodtype} from 'react-icons/md';
 import {RiHealthBookFill} from 'react-icons/ri';
 
 
-function Card({ nomeUsuario, endereco, texto, tipoSanguineo, quantidade  }) {
+function Card({ nomeUsuario, endereco, texto, tipoSanguineo, quantidade, tipo  }) {
+    tipo = tipo[0].toUpperCase() + tipo.slice(1).toLowerCase();
+    function evento(e) {
+        if(tipo=="Doar"){
+            // implementar funcao para doar
+            console.log("Doar");
+        }
+        if(tipo=="Atualizar"){
+            // implementar funcao para atualizar
+            console.log("Atualizar");
+        }
+    }
+
+
     return(
     <div className="card">
         <div className="usuario">
@@ -12,7 +25,7 @@ function Card({ nomeUsuario, endereco, texto, tipoSanguineo, quantidade  }) {
                 <CgProfile/>
             </div>
             <div className="nome-endereco">
-                <h3>{nomeUsuario}</h3>
+                <h3 className="nome">{nomeUsuario}</h3>
                 <span>{endereco}</span>
             </div>
         </div>
@@ -31,7 +44,7 @@ function Card({ nomeUsuario, endereco, texto, tipoSanguineo, quantidade  }) {
         {/* implementar barra de progresso */}
 
         <div className="btn">
-            <button>Doar</button>
+            <button onClick={evento}>{tipo}</button>
         </div>
 
     </div>
