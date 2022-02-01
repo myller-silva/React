@@ -1,5 +1,12 @@
 body{
-  width: 112px ; 
-  background-color: #E3E3E3;;
+  background-color: #ccc;
+}
 
+
+.container{
+  background-color: #E3E3E3;
+  /* modificar depois: */
+  width: 1200px;
+  margin: auto;
+  display: flex;
 }

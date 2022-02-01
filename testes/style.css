@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 138, 138) ;
+}
+
+
+.container{
+    width: 30%;
+    margin: 0 auto;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;  
+    
+    box-shadow: 10px 10px 5px black;
+}
+
+.container h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    margin-bottom: 7em;
+}
+
+.container div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5em;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container label{
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    padding-right: 0.7em;
+}
+
+.container input{
+    width: 150px;
+    height: 30px;
+    border: none ;
+    transition: .5s;
+}
+
+.container input:hover{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.container input:focus, input:focus, select:focus {
+    outline: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.container button{
+    width: 150px;
+    height: 30px;
+    margin-bottom: .5em;
+    border: none;
+    background-color: rgb(224, 42, 42);
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container button:hover{
+    background-color: #fff;
+    color: rgb(224, 42, 42);
+}
+
+.container button:focus{
+    outline: none;
+    background-color: rgb(149, 27, 27);
+    color: #fff;
+}

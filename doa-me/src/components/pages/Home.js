@@ -1,8 +1,7 @@
-import styles from './Content.module.css'
 
 function Home() {
     return(
-        <div className={styles.content}>
+        <div>
             <h2>Home</h2>
             <p>Conteudo da pagina home</p>
             {/* <Card/> */}
