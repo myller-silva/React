@@ -6,7 +6,7 @@ function Home() {
     }
 
     return(
-        <div>
+        <div id="Cards">
             <h1>Todos os pedidos</h1>
 
             <Card 

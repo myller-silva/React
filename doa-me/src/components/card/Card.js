@@ -1,4 +1,4 @@
-import {CgProfile} from 'react-icons/cg';
+// import {CgProfile} from 'react-icons/cg';
 import {MdOutlineBloodtype} from 'react-icons/md';
 import {RiHealthBookFill} from 'react-icons/ri';
 import Btn from './Btn';
@@ -12,9 +12,10 @@ function Card({ nomeUsuario, endereco, texto, tipoSanguineo, quantidade, textoBt
     <div className={styles.card}>
         {/*  dados do usuario */}
         <User
-        //  foto = img
+        //  foto
             nomeUsuario ={nomeUsuario}
             endereco = {endereco}
+        //  telefone para contato
         />
         
         <div className={styles.texto}>
