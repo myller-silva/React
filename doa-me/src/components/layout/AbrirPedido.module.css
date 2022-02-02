@@ -1,4 +1,4 @@
-.btnAbrirPedido button{
+.btn button{
     background: #00DF6D;
     color: #fff;
     border-style: none;
@@ -7,15 +7,13 @@
     border-radius: 10px;
     cursor: pointer;
     transition: .3s;
-
     position: fixed;
     top: 30px;
     right: 35px;
     /* z-index: 100; */
-
 }
 
-.btnAbrirPedido button:hover{
+.btn button:hover{
     background: #009247;
     color: #fff;
     text-shadow: #000;
