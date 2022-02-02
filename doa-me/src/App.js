@@ -4,6 +4,7 @@ import Footer from './components/layout/Footer';
 import Home from './components/pages/Home' ;
 import Pedidos from './components/pages/Pedidos';
 import './index.css';
+import AbrirPedido from './components/layout/AbrirPedido';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path='/' element={<Home/>}/>
           <Route path='/pedidos' element={<Pedidos/>}/>
         </Routes>
+        <AbrirPedido/>
       </div>
       {/*  */}
       <Footer/>

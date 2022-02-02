@@ -1,17 +1,17 @@
-import './Card.css';
+
 import {CgProfile} from 'react-icons/cg';
 import {MdOutlineBloodtype} from 'react-icons/md';
 import {RiHealthBookFill} from 'react-icons/ri';
-
+import './Card.css';
 
 function Card({ nomeUsuario, endereco, texto, tipoSanguineo, quantidade, tipo  }) {
     tipo = tipo[0].toUpperCase() + tipo.slice(1).toLowerCase();
     function evento(e) {
-        if(tipo=="Doar"){
+        if(tipo==="Doar"){
             // implementar funcao para doar
             console.log("Doar");
         }
-        if(tipo=="Atualizar"){
+        if(tipo==="Atualizar"){
             // implementar funcao para atualizar
             console.log("Atualizar");
         }
