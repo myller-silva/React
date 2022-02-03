@@ -6,7 +6,7 @@ function Pedidos(   ) {
     }
 
     return(
-        <div>
+        <div id="pedidos">
             <h1>Seus pedidos</h1>
             <Card 
                 nomeUsuario = "Myller Silva"

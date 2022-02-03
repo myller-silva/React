@@ -3,19 +3,21 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './components/pages/Home' ;
 import Pedidos from './components/pages/Pedidos';
-import Doar from './components/pages/Doar';
 import AbrirPedido from './components/layout/AbrirPedido';
+import Doar from './components/pages/Doar';
 import './index.css';
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <div className="container">
+      <div className="container" id="container">
         <Routes>
           <Route exact path='/' element={<Home/>}/>
           <Route path='/pedidos' element={<Pedidos/>}/>
+          
           <Route path='/doar' element={<Doar/>}/>
+          {/* <Route path='/atualizarpedido' element={<Atualizar/>}/> */}
         </Routes>
         <AbrirPedido/>
       </div>
