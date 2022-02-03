@@ -7,31 +7,32 @@
     margin-left: 50px;
 }
 
-.social_list{
+.footer ul{
     display: flex;
     justify-content: center;
     /* list-style: none; */
     list-style-type: none;
 }
 
-.social_list li{
+.footer ul li{
     margin: 0 1em;
+    transition: .3s;
 }
 
-.social_list li:hover{
+.footer ul li:hover{
     color: #EF233C;
 }
 
-.social_list svg{
+.footer ul svg{
     font-size: 1.5em;
     cursor: pointer;
 }
 
-.copy_right{
+.footer p{
     margin-top: 2em;
 }
 
-.copy_right span{
+#copy_right span{
     font-weight: bold;
     color:  #EF233C;
 }

@@ -4,13 +4,12 @@ import {BiDroplet} from 'react-icons/bi';
 
 import './Navbar.css';
 
-
 function Navbar() {
     return(
         <nav className="navbar">
-            <ul className="list-navbar">
-                <li className="list-navbar-item"><Link to="/"><AiOutlineHome/></Link></li>
-                <li className="list-navbar-item"><Link to="/pedidos"><BiDroplet/></Link></li>
+            <ul>
+                <li><Link to="/"><AiOutlineHome/></Link></li>
+                <li><Link to="/pedidos"><BiDroplet/></Link></li>
             </ul>
         </nav>
     )

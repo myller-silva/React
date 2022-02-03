@@ -1,4 +1,4 @@
-import styles from './AbrirPedido.module.css';
+import './AbrirPedido.css';
 
 function AbrirPedido() {
 
@@ -7,7 +7,7 @@ function AbrirPedido() {
     }
 
     return(
-        <div className={styles.btn}>
+        <div className='AbrirPedido'>
             <button onClick={abrirPedido}>Abrir pedido</button>
         </div>
     )

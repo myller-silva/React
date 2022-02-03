@@ -13,13 +13,13 @@
     z-index: 100;
 }
 
-.list-navbar{
+.navbar ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.list-navbar-item svg{
+.navbar ul li svg{
     /* espacamento */
     margin-top: .5em;
     margin-bottom: .5em;
@@ -29,7 +29,7 @@
     transition: .3s;
 }
 
-.list-navbar-item svg:hover{
+.navbar ul li svg:hover{
     color:#EF233C;
 }
 
