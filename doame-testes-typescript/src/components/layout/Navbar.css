@@ -1,0 +1,35 @@
+.navbar{
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    width: 3%;
+    height: 100%;
+    /* margin-right: 30px; */
+    position: fixed;
+    z-index: 100;
+}
+
+.list-navbar{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-navbar-item svg{
+    /* espacamento */
+    margin-top: .5em;
+    margin-bottom: .5em;
+
+    color: rgba(175, 175, 175, 1);
+    font-size: 30px;    
+    transition: .3s;
+}
+
+.list-navbar-item svg:hover{
+    color:#EF233C;
+}
+

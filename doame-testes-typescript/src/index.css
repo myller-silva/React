@@ -7,7 +7,7 @@ body{
   background-color: #E3E3E3;
 }
 
-.container{
+#container{
   background-color: #E3E3E3;
   /* modificar depois: */
   width: 1200px;
