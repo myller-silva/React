@@ -1,9 +1,9 @@
 import {BrowserRouter as Router} from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
 import Container from './components/layout/Container';
+import Footer from './components/layout/Footer';
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Navbar />
@@ -12,5 +12,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;

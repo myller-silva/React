@@ -1,15 +1,20 @@
 import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa';
 import './Footer.css';
 
+const siteDados = {
+    nome:"DoaMe",
+    ano:"2022",
+}
+
 function Footer( ) {
     return(
         <footer className='footer'>
-             <ul className='social_list'>
+             <ul >
                 <li><FaFacebook/></li>
                 <li><FaInstagram/></li>
                 <li><FaLinkedin/></li>
              </ul>
-             <p id='copy_right'><span>DoaMe</span> &copy; 2021</p>
+             <p id='copy_right'><span>{siteDados.nome}</span> &copy; {siteDados.ano}</p>
         </footer>
     )
 }
