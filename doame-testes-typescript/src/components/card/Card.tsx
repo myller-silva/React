@@ -9,8 +9,8 @@ interface CardInterface{
     urlFoto: string;
     nome: string;
     endereco: string;
-    texto: string;
     tipoSanguineo: string;
+    texto: string;
     quantidade: string;
     textoBtn: string;
     onClick():any;

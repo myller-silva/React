@@ -1,13 +1,13 @@
 import { CgProfile } from 'react-icons/cg';
 import './User.css';
 
-interface UserInterface{
-    urlFoto: string;
-    nome: string;
-    endereco: string;
+type U = {
+    urlFoto:string;
+    nome:string;
+    endereco:string;
 }
 
-function User(user:UserInterface) {
+function User(user: U) {
     
     return(
         <div className='usuario'>
