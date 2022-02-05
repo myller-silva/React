@@ -13,7 +13,7 @@ function Home() {
         telefone:"85 987654321",
         onClick: ()=> {
             console.log("doar");
-            console.log(card);
+            // console.log(card);
         },
     }
     

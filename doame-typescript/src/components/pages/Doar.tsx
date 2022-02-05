@@ -21,7 +21,7 @@ function Doar( card:CardInterface ) {
     }
     function cancelar(){
         console.log("cancelar");
-        console.log(doar);
+        // console.log(doar);
     }
     return(
         <div className='doar' >
