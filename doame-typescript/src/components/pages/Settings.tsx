@@ -1,6 +1,7 @@
 import { Usuario } from "../model/Usuario"
+// import { TiEdit } from 'react-icons/ti';
+import { CgProfile } from "react-icons/cg";
 import './Settings.css';
-import { TiEdit } from 'react-icons/ti';
 
 export function Settings(user: Usuario | any) {
     
@@ -10,40 +11,32 @@ export function Settings(user: Usuario | any) {
 
     return (
         <div id="settings">
-            <h1>Configurar perfil</h1>
-            <div className="settingsUser">
-                <p>
-                    <img src="https://avatars.githubusercontent.com/u/76014754?v=4" width="50%" alt="foto de perfil"/>
-                    <span onClick={editar}><TiEdit /></span>
-                </p>
-                <p>
-                    Nome: <input placeholder={user.nome ?? "indefinido"} />
-                    <span onClick={editar}><TiEdit /></span>
-                </p>
-                <p>
-                    Endereço: <input placeholder={user.endereco ?? "indefinido"}/>
-                    <span onClick={editar}><TiEdit /></span>
-                </p>
-                <p>
-                    Telefone: <input placeholder={user.telefone ?? "indefinido"}/>
-                    <span onClick={editar}><TiEdit /></span>
-                </p>
-                <p>
-                    Tipo sanguíneo: {user.tipoSanguineo ?? ""}
-                    <select name="tipo sanguineo">
-                        <option value="indefinido" disabled>selecionar</option>
-                        <option value="A+">A+</option>
-                        <option value="A-">A-</option>
-                        <option value="B+">B+</option>
-                        <option value="B-">B-</option>
-                        <option value="AB+">AB+</option>
-                        <option value="AB-">AB-</option>
-                        <option value="O+">O+</option>
-                        <option value="O-">O-</option>
-                    </select>
-                    {/* <span onClick={editar}><TiEdit /></span> */}
-                </p>
-            </div>
+        <h1>Configurar perfil</h1>
+            {/* <div id="settings"> */}
+                <div className="edit">
+                    <div className="foto">
+                        <CgProfile/>
+                    </div>
+                    <div className="content">
+                        <span>Nome:</span>
+                        <input type="text" placeholder="nome"/>
+                    </div>
+                    <div className="content">
+                        <span>Email:</span>
+                        <input type="email" placeholder="email"/>
+                    </div>
+                    <div className="content">
+                        <span>Telefone:</span>
+                        <input type="tel" placeholder="telefone"/>
+                    </div>
+                    
+                    <div className="content">
+                        <div id="btnEnviar">
+                            <input type="submit" placeholder="nome"/>
+                        </div>
+                    </div>
+                </div>
+            {/* </div> */}
         </div>
     )
 }
