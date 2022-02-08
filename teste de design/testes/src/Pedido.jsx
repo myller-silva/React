@@ -1,8 +1,9 @@
-import './Pedido.css';
 import {CgProfile} from 'react-icons/cg';
 import {BiDroplet} from 'react-icons/bi';
 import {RiHealthBookFill} from 'react-icons/ri';
+import {SiWhatsapp} from 'react-icons/si';
 import TiposCompativeis from './TiposCompativeis';
+import './Pedido.css';
 
 let foto="";
 foto="https://avatars.githubusercontent.com/u/76014754?s=400&u=b231329faf83b64293b66fbdc0611a4c12bc7f66&v=4";
@@ -17,6 +18,7 @@ export default function Pedido(){
         <div>
         <h1>Pedido</h1>
             <div className='pedido'>
+                {/*  */}
                 <div className='content'>
                     <div className='user'>
                         <div className='user-foto'>
@@ -28,9 +30,11 @@ export default function Pedido(){
                         </div>
                     </div>
                 </div>
+                {/*  */}
                 <div className='content'>
                     <p>{texto}</p>
                 </div>
+                {/*  */}
                 <div className='content'>
                     <div className='detalhes'>
                         <div className='bloco'>
@@ -47,6 +51,14 @@ export default function Pedido(){
                         </div>
                     </div>
                 </div> 
+                {/*  */}
+                <div className='content'>
+                    <div className='btn'>
+                        <SiWhatsapp/>
+                        <span>Entrar em contato</span>
+                    </div>
+                </div>
+                
             </div>
         </div>
     )
