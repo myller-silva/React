@@ -1,0 +1,68 @@
+.pedido{
+    background-color: white;
+    /* height: 37.5em; */
+    /* min-height: 100%; */
+    width: 37.5em;
+    margin: auto;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* del: */
+    margin-top: 10em;
+    margin-bottom: 10em;
+    padding: 1em;
+}
+
+.content{
+    width: 90%;
+    /* background-color: grey; */
+    margin: 0 1em 1em 1em;
+}
+
+.content .user{
+    display: flex;
+    flex-direction: row;
+}
+
+.content .user .user-foto{
+    /* width: 100%; */
+    font-size: 3em;
+    display: flex;
+    align-self: center;
+    margin-right: .5em;
+}
+.content .user img{
+    width: 1em;
+    border-radius: 50%;
+}
+
+.content .user .user-detalhes{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.content .detalhes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content .detalhes .bloco{
+    display: flex;
+    flex-direction: row;
+    background-color: #ccc;
+    min-width: 30%;
+    height: 4em;
+    border: .1em solid rgb(161, 161, 161);
+    border-radius: .5em;
+    align-items: center;
+}
+.content .detalhes .bloco svg{
+    color: #EF233C;
+    font-size: 5vh;
+}
+.content .detalhes .bloco .tipos{
+    display: flex;
+    justify-content: center;
+}
