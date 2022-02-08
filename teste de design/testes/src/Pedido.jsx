@@ -41,7 +41,7 @@ export default function Pedido(){
                         </div>
                         <div className='bloco'>
                             <RiHealthBookFill/>
-                            <p>Quantidade:</p>
+                            <p>Quantidade: </p>
                             <span>{quantidade}L</span>
                         </div>
                     </div>
