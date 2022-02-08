@@ -13,14 +13,14 @@ function TiposCompativeis({tipoSanguineo}) {
     )
 }
 function tiposCompativeis(tipoSanguineo) {
-    if(tipoSanguineo==="A+")    return ["A+", "A-","O+", "O-"]
-    if(tipoSanguineo==="O+")    return ["O+", "O-" ]
-    if(tipoSanguineo==="B+")    return ["B+, B-, O+, O-"]
-    if(tipoSanguineo==="AB+")   return ["Todos"]
-    if(tipoSanguineo==="A-")    return ["A-", "O-"]
     if(tipoSanguineo==="O-")    return ["O-"]
+    if(tipoSanguineo==="O+")    return ["O+", "O-"]
+    if(tipoSanguineo==="A-")    return ["A-", "O-"]
     if(tipoSanguineo==="B-")    return ["B-", "O-"]
+    if(tipoSanguineo==="B+")    return ["B+, B-, O+, O-"]
+    if(tipoSanguineo==="A+")    return ["A+", "A-","O+", "O-"]
     if(tipoSanguineo==="AB-")   return ["AB-", "A-", "B-", "O-"]
+    if(tipoSanguineo==="AB+")   return ["Todos"]
     return "erro"
 }
 
