@@ -1,0 +1,16 @@
+.tipos-compativeis{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+}
+
+.tipos-compativeis li{
+    display: flex;
+    flex-direction: row;
+    background: #00DF6D;
+    color: white;
+    padding: .1em .6em .1em .6em;
+    border-radius: .5em;
+    margin-left: .2em;
+}

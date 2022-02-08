@@ -2,13 +2,14 @@ import './Pedido.css';
 import {CgProfile} from 'react-icons/cg';
 import {BiDroplet} from 'react-icons/bi';
 import {RiHealthBookFill} from 'react-icons/ri';
+import TiposCompativeis from './TiposCompativeis';
 
 let foto="";
 foto="https://avatars.githubusercontent.com/u/76014754?s=400&u=b231329faf83b64293b66fbdc0611a4c12bc7f66&v=4";
 const nome="Myller Silva";
 const localizacao="Fortaleza-CE";
 const texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus quam amet, ut nunc massa tempus nunc aliquam placerat. Adipiscing placerat mauris urna, malesuada. Non sagittis vel pellentesque auctor nibh faucibus lobortis sem. Nibh eget vulputate pharetra, sem turpis porttitor tellus. Ut hac lorem adipiscing venenatis, sit. Parturient non nisi in vitae massa rhoncus elit lectus. Libero, quis morbi massa id cras purus vivamus. Enim praesent eget nisl, vitae. Tellus mattis dolor eu molestie leo sit mattis nec. Praesent vestibulum, integer quis quis tortor consequat feugiat aliquet interdum. Arcu enim, fames semper mauris, sit. Pellentesque pretium vel aliquam amet, tempus lacus, faucibus quam. Turpis vitae vehicula a venenatis sem auctor vitae. Scelerisque libero mi enim ultrices non. Egestas id placerat nascetur dolor at massa ac, scelerisque adipiscing. Dis pulvinar nisl adipiscing imperdiet ut pellentesque odio. Id nunc enim aliquet praesent. Augue euismod blandit tellus est. Id potenti urna nisl ut sit. Ultrices nibh lectus facilisis vulputate ipsum enim, blandit orci. Volutpat morbi ut commodo fermentum.";
-const tipoSanguineo="O-";
+const tipoSanguineo="AB-";
 const quantidade=1; /*em litros*/
 
 export default function Pedido(){
@@ -36,7 +37,7 @@ export default function Pedido(){
                             <BiDroplet/>
                             <div>
                                 <p>Tipos compativeis: </p>
-                                <span className='tipos'>{tiposCompativeis(tipoSanguineo)}</span>
+                                <TiposCompativeis tipoSanguineo={tipoSanguineo} />
                             </div>
                         </div>
                         <div className='bloco'>
@@ -49,16 +50,4 @@ export default function Pedido(){
             </div>
         </div>
     )
-}
-
-function tiposCompativeis(tipoSanguineo) {
-    if(tipoSanguineo==="A+")    return "A+, A-, O+, O-"
-    if(tipoSanguineo==="O+")    return "O+, O-" 
-    if(tipoSanguineo==="B+")    return "B+, B-, O+, O-"
-    if(tipoSanguineo==="AB+")   return "Todos"
-    if(tipoSanguineo==="A-")    return "A-, O-"
-    if(tipoSanguineo==="O-")    return "O-"
-    if(tipoSanguineo==="B-")    return "B-, O-"
-    if(tipoSanguineo==="AB-")   return "AB-, A-, B-, O-"
-    return "erro"
 }
