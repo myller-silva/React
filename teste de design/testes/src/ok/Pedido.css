@@ -1,0 +1,64 @@
+.pedido{
+    background-color: white;
+    width: 37.5em;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 1em; margin: 0 auto; border-radius: 1em;
+}
+
+.content{
+    width: 90%;
+    margin: 0 1em 1em 1em;
+}
+
+.content .user{
+    display: flex;
+    flex-direction: row;
+}
+
+.content .user .user-foto{
+    display: flex; align-self: center;
+    margin-right: .5em;
+    font-size: 3em;
+}
+.content .user img{
+    width: 1em;
+    border-radius: 50%;
+}
+
+.content .user .user-detalhes{
+    display: flex; flex-direction: column; align-self: center;
+}
+
+.content .detalhes{
+    display: flex; flex-direction: row; justify-content: space-around;
+}
+.content .detalhes .bloco{
+    background-color: #ccc;
+    display: flex; flex-direction: row; align-items: center;
+    min-width: 30%; min-height: 4em;
+    border: .1em solid rgb(161, 161, 161);
+    border-radius: .5em;
+}
+.content .detalhes .bloco svg{
+    color: #EF233C;
+    font-size: 2em;
+}
+.content .detalhes .bloco .tipos{
+    display: flex;
+    justify-content: center;
+}
+
+.content .btn{
+    background: #00DF6D;
+    color: #fff;
+    height: 2em; width: 100%;
+    border-style: none; border-radius: 10px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: .3s;
+}
+.content .btn:hover{
+    background: #009247;
+    color: #fff;
+    /* text-shadow: #000; */
+}

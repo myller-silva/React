@@ -1,9 +1,10 @@
-import Pedido from "./Pedido";
+import AbrirPedido from "./AbrirPedido";
+
 
 function App() {
   return (
     <div>
-      <Pedido/>
+      <AbrirPedido/>
     </div>
   );
 }

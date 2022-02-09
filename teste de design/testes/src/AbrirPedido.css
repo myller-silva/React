@@ -1,0 +1,36 @@
+.abrir-pedido-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.abrir-pedido-content{
+    margin: 0 auto;
+    padding: 1em 2em;
+    border-radius: .5em;
+    background-color: white;
+    width: 37.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.abrir-pedido-content .descricao{
+    display: flex;
+    flex-direction: column;
+    min-height: 15em;
+}
+.abrir-pedido-content .descricao textarea{
+    min-height: 15em;
+    border-radius: .5em;
+    margin: .3em 0 1em 0;
+    /* color: #ccc; */
+    background-color: #efefef;
+}
+
+
+.abrir-pedido-content .detalhes{
+    display: flex;
+    flex-direction: row;
+}
+.detalhes input{
+    margin-top: .3em;
+}
