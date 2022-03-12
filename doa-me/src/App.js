@@ -14,8 +14,7 @@ function App() {
       <div className="container" id="container">
         <Routes>
           <Route exact path='/' element={<Home/>}/>
-          <Route path='/pedidos' element={<Pedidos/>}/>
-          
+          <Route path='/pedidos' element={<Pedidos/>}/>          
           <Route path='/doar' element={<Doar/>}/>
           {/* <Route path='/atualizarpedido' element={<Atualizar/>}/> */}
         </Routes>
