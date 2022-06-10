@@ -1,8 +1,0 @@
-
-
-#14 - State Lift
-    - é uma tecnica utilizada para compartilh o state;
-    - é normal componentes dependerem do mesmo estado;
-    - entao precisamos elevar o nivel do mesmo a um componente pai;
-    - entao centralizamos o state no pai, e definimos quem usa e quem define (setState);
-    
